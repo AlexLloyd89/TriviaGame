@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Triva Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/style.css" />
+  </head>
+
+  <body>
+    <div class="header">Title of Trivia Game</div>
+    <div class="wrapmeup">
+      <!-- Question One -->
+      <div class="block">
+        <div class="question">
+          How many half-steps are in the major scale? :
+        </div>
+      </div>
+      <div class="answers">
+        <div>
+          <input type="radio" id="one" name="major-scale" value="one" />
+          <label for="one">One</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            class="correct"
+            id="two"
+            name="major-scale"
+            value="two"
+          />
+          <label for="two">Two</label>
+        </div>
+
+        <div>
+          <input type="radio" id="three" name="major-scale" value="three" />
+          <label for="three">Three</label>
+        </div>
+      </div>
+
+      <!-- Question Two -->
+      <div class="question">
+        How many half-steps are in the harmonic-minor scale? :
+      </div>
+      <div class="answers">
+        <div>
+          <input
+            type="radio"
+            id="one"
+            name="harmonic-minor-scale"
+            value="one"
+          />
+          <label for="one">One</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="two"
+            name="harmonic-minor-scale"
+            value="two"
+          />
+          <label for="two">Two</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="three"
+            name="harmonic-minor-scale"
+            value="three"
+          />
+          <label for="three">Three</label>
+        </div>
+      </div>
+      <div class="question">How many notes are in a chromatic octave? :</div>
+      <div class="answers">
+        <div>
+          <input type="radio" id="eight" name="octave" value="eight" />
+          <label for="eight">Eight</label>
+        </div>
+
+        <div>
+          <input type="radio" id="four" name="octave" value="four" />
+          <label for="four">Four</label>
+        </div>
+
+        <div>
+          <input type="radio" id="twelve" name="octave" value="twelve" />
+          <label for="twelve">Twelve</label>
+        </div>
+      </div>
+      <div class="question">
+        The relationship between 'D' and 'F' would most commonly be described as
+        a :
+      </div>
+      <div class="answers">
+        <div>
+          <input
+            type="radio"
+            id="minor-third"
+            name="interval"
+            value="minor-third"
+          />
+          <label for="minor-third">Minor-Third</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="perfect-fifth"
+            name="interval"
+            value="perfect-fifth"
+          />
+          <label for="perfect-fifth">Perfect-Fifth</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="augmented-second"
+            name="interval"
+            value="augmented-second"
+          />
+          <label for="augmented-second">Augmented-Second</label>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="assets/script.js"></script>
+  </body>
+</html>
