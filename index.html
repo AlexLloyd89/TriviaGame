@@ -10,14 +10,19 @@
   </head>
 
   <body>
-    <div class="header">Title of Trivia Game</div>
+    <div class="header">Music Theory Quiz</div>
     <div class="wrapmeup">
+    <div class="intro">
+    
+      Test your music theory knwoledge. Once you click on the button below, you will have 2 minutes to answer 5 questions about basic music theory concepts.
+      <div class="begin">Press Here to Start</div>
+    
+    </div>
+    <div id="main-content">
       <!-- Question One -->
-      <div class="block">
-        <div class="question">
-          How many half-steps are in the major scale? :
-        </div>
-      </div>
+      <form>
+      <div class="question">How many half-steps are in the major scale? :</div>
+
       <div class="answers">
         <div>
           <input type="radio" id="one" name="major-scale" value="one" />
@@ -126,10 +131,43 @@
             value="augmented-second"
           />
           <label for="augmented-second">Augmented-Second</label>
+          <!--Question Five-->
+        </div>
+        <div class="question">What Notes Compose an Em Chord? :</div>
+
+      <div class="answers">
+        <div>
+          <input type="radio" id="egb" name="chord" value="egb" />
+          <label for="egb">EGB</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            id="efa"
+            name="chord"
+            value="efa"
+          />
+          <label for="efa">EFA</label>
+        </div>
+
+        <div>
+          <input type="radio" id="egc" name="chord" value="egc" />
+          <label for="egc">EGC</label>
         </div>
       </div>
+      </div>
+      <div class="submit">
+        Finish Quiz
+      </div>
+      </div>
+      <div class="score">
+          Correct: <span id="right"></span>
+          Incorrect: <span id="wrong"></span>
+          <div class="retry">Try Again?</div>
+      </div>
     </div>
-<input type="submit" value="Submit">
+  </form>
     <script type="text/javascript" src="assets/script.js"></script>
   </body>
 </html>

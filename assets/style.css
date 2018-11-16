@@ -2,15 +2,11 @@
   max-width: 960px;
   margin: 0 auto;
 }
-.block {
-  display: inline-block;
-}
-.question {
-  float: left;
-  vertical-align: top;
+
+#main-content {
+  display: none;
 }
 
-.answers {
-  float: right;
-  vertical-align: top;
+.score {
+  display: none;
 }
