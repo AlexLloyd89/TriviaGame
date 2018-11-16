@@ -20,7 +20,7 @@ $(document).ready(function() {
       }
     });
     alert(
-      `This is what you got right: ${coreect}. This is what you got wrong: ${4 -
+      `This is what you got right: ${correct}. This is what you got wrong: ${4 -
         correct}`
     );
   });
