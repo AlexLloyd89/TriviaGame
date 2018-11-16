@@ -12,7 +12,7 @@ $(document).ready(function() {
   });
 
   //This is where we could loop through and see the amount of elements that have both guessed and correct
-  $("SUBMIT BUTTON").on("submit", function(e) {
+  $("submit").on("submit", function(e) {
     e.preventDefault();
     $("input").each(function() {
       if ($(this).hasClass("guessed") && $(this).hasClass("correct")) {
