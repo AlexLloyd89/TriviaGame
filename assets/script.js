@@ -1,9 +1,21 @@
 var correct = 0;
 var incorrect = 0;
-
+var totalTime = 120;
 $("#right").text(correct);
 $("#wrong").text(incorrect);
 
+//timer
+function countdown() {
+  totalTime = totalTime - 1;
+  $("#time-left").text(totalTime);
+  time = setTimeout(countdown, 1000);
+
+  if (totalTime === -1) {
+    $("#main-content").css("display", "none");
+    $(".score").css("display", "block");
+    $("#time-left").css("display", "none");
+  }
+}
 $(".submit").on("click", function submitAnswer() {
   var radios = document.getElementsByName("major-scale");
   var i = 0,
@@ -132,10 +144,12 @@ $(".submit").on("click", function submitAnswer() {
 $(".submit").on("click", function() {
   $("#main-content").css("display", "none");
   $(".score").css("display", "block");
+  $("#time-left").css("display", "none");
 });
 
 //start game CSS
 $(".begin").on("click", function() {
   $(".intro").css("display", "none");
   $("#main-content").css("display", "block");
+  countdown();
 });

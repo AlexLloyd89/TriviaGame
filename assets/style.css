@@ -1,6 +1,28 @@
+body {
+  background: url("images/polygon.jpg");
+  background-size: cover;
+}
+
+.header {
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Quattrocento", serif;
+  font-weight: bold;
+  font-size: 40px;
+}
+
 .wrapmeup {
   max-width: 960px;
   margin: 0 auto;
+  background-color: rgba(161, 162, 168, 0.603);
+  color: rgb(7, 9, 37);
+  font-size: 20px;
+  box-shadow: 2px 2px 2px black;
+  padding: 10px;
+  overflow: hidden;
+  border: 6px double;
+  border-radius: 20px;
+  font-family: "Nunito", sans-serif;
 }
 
 #main-content {
@@ -9,4 +31,17 @@
 
 .score {
   display: none;
+}
+
+#time-left {
+  background: blue;
+  color: white;
+}
+
+.begin:hover {
+  color: rgb(158, 32, 184);
+}
+
+.submit:hover {
+  color: rgb(158, 32, 184);
 }

@@ -6,19 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Triva Game</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Quattrocento" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/style.css" />
   </head>
 
   <body>
+  
     <div class="header">Music Theory Quiz</div>
+    <span id="time-left">
+      </span>
     <div class="wrapmeup">
     <div class="intro">
-    
-      Test your music theory knwoledge. Once you click on the button below, you will have 2 minutes to answer 5 questions about basic music theory concepts.
+          Test your music theory knowledge. Once you click on the button below, you will have two minutes to answer five questions about basic music theory concepts.
       <div class="begin">Press Here to Start</div>
     
     </div>
     <div id="main-content">
+      
       <!-- Question One -->
       <form>
       <div class="question">How many half-steps are in the major scale? :</div>
@@ -164,10 +168,15 @@
       <div class="score">
           Correct: <span id="right"></span>
           Incorrect: <span id="wrong"></span>
-          <div class="retry">Try Again?</div>
+          <div class="promo">Like the song? Download it for free, and check out some of my other music, from this website!
       </div>
+       </div>
+    <audio controls>
+        <source src="assets/song/MusicaProvocatione.mp3" type='audio/mpeg'>
+     </audio>
     </div>
   </form>
     <script type="text/javascript" src="assets/script.js"></script>
+    
   </body>
 </html>
