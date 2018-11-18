@@ -7,7 +7,7 @@ $("#wrong").text(incorrect);
 //timer
 function countdown() {
   totalTime = totalTime - 1;
-  $("#time-left").text(totalTime);
+  $("#time-left").text("Time Remaining:" + " " + totalTime);
   time = setTimeout(countdown, 1000);
 
   if (totalTime === -1) {
@@ -16,6 +16,8 @@ function countdown() {
     $("#time-left").css("display", "none");
   }
 }
+
+//Massive wall of code that I should trim down at some point
 $(".submit").on("click", function submitAnswer() {
   var radios = document.getElementsByName("major-scale");
   var i = 0,
