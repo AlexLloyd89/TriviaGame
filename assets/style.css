@@ -10,6 +10,7 @@ body {
   font-weight: bold;
   font-size: 150px;
   color: rgba(236, 243, 253, 0.466);
+  padding-bottom: 5%;
 }
 
 .header:hover{
@@ -39,11 +40,12 @@ body {
 
 #time-left {
   color: rgb(49, 11, 11);
-  text-shadow: 2px 2px 2px rgba(248, 252, 255, 0.23);
+  text-shadow: 2px 2px 0px rgba(248, 252, 255, 0.42);
   font-family: "Nunito", sans-serif;
   font-size: 30px;
   text-align: center;
   display: block;
+  padding-bottom: 2%;
 }
 .begin {
   text-align: center;
