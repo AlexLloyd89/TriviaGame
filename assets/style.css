@@ -64,6 +64,7 @@ body {
   background: #0fb1b178;
   display: block;
   width: fit-content;
+  width: -moz-fit-content;
   margin: 5px auto;
   padding: 2px;
 }
