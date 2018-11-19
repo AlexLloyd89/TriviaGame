@@ -99,3 +99,10 @@ audio {
   display: block;
   margin: 0 auto;
 }
+
+.answers{
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px 0px;
+
+}
